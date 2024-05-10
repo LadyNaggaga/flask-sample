@@ -1,13 +1,13 @@
-# GitHub Codespaces ♥️ Flask
+# Aspire Dashboard ♥️ Flask
+To run the Aspire Dashboard first run:
 
-Welcome to your shiny new Codespace running Flask! We've got everything fired up and running for you to explore Flask.
-
-You've got a blank canvas to work on from a git perspective as well. There's a single initial commit with the what you're seeing right now - where you go from here is up to you!
-
-Everything you do here is contained within this one codespace. There is no repository on GitHub yet. If and when you’re ready you can click "Publish Branch" and we’ll create your repository and push up your project. If you were just exploring then and have no further need for this code then you can simply delete your codespace and it's gone forever.
+```cli
+docker run --rm -it -p 18888:18888 -p 4317:18889 -d --name aspire-dashboard \
+    mcr.microsoft.com/dotnet/nightly/aspire-dashboard:8.0.0-preview.6
+```
 
 To run this application:
 
-```
+```cli
 flask --debug run
 ```
