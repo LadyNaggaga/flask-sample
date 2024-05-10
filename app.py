@@ -13,3 +13,7 @@ FlaskInstrumentor().instrument_app(app)
 def hello_world():
     logging.info("/ has been hit")
     return render_template("index.html", title="Hello")
+
+
+if __name__ == "__main__":
+    app.run(debug=True)
